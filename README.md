@@ -6,7 +6,7 @@
 3. Agregar alias de laravel en .bashrc
 	nano ~/.bashrc
 	En el archivo agregar esta linea 
-		alias laravel='~/.composer/vendor/bin/laravel'
+		alias laravel='~/.config/composer/vendor/bin/laravel'
 	Guardar y aplicar el cambio
 		source ~/.bashrc
 
@@ -23,6 +23,11 @@
 
 5. Hacer Fork del proyecto y luego un clone del proyecto forkeado. (preguntar dudas)
 
-6. Una vez hecho todo lo anterior pueden entrar a site/ dentro del directorio clonado y hacer 
+	entrar a site/ y hacer
+		composer install
+	editar o crear el archivo .env con la siguiente informacion
+		.env
+
+6. Una vez hecho todo lo anterior desde site/ en su directorio clonado hacer 
 	php artisan serve
 	E ir al link que les muestra, deberia mostrarles una bienvenida de laravel
